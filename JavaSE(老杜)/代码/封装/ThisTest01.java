@@ -4,6 +4,8 @@ public class ThisTest01{
 		Customer c2 = new Customer("李四");
 		c1.shopping();
 		c2.shopping();
+		
+		Customer.doSome();
 	}
 }
 
@@ -21,6 +23,11 @@ class Customer{
 	
 	//实例方法
 	public void shopping(){
-		System.out.println(name + "正在购物！");
+		System.out.println(this.name + "正在购物！");
+	}
+	//静态方法
+	public static void doSome(){
+		System.out.println("doSome静态方法执行");
+		// System.out.println(name);
 	}
 }
