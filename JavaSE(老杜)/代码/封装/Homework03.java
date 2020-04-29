@@ -16,9 +16,9 @@ class Ha{
 	
 	//构造方法 无参
 	public Ha(){
-		this.year = 1970;
-		this.month = 1;
-		this.day = 1;
+		// this.year = 1970;
+		// this.month = 1;
+		// this.day = 1;
 		this(1111, 1, 1);
 	}
 	//构造方法 有参
