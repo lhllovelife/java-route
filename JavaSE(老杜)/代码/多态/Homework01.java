@@ -14,7 +14,7 @@ public class Homework01{
 		Musician m1 = new Musician("张三");
 		Musician m2 = new Musician("李四");
 		Musician m3 = new Musician("王五");
-		Instrument i1 = new Erhu();
+		Instrument i1 = new Erhu(); //父类引用指向子类对象
 		Instrument i2 = new Piano();
 		Instrument i3 = new Violin();
 		m1.play(i1);
