@@ -8,3 +8,4 @@ public class Homework02 {
         System.out.println(a + "*" + b + "=" + c);
     }
 }
+
