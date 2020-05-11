@@ -5,10 +5,11 @@ public class FinalTest01 {
 }
 
 class User{
-    final int age = 15;
+    final int age;
     final int height;
     static final String name = "";
-    public User(int height){
+    public User(int age, int height){
+        this.age = age;
         this.height = height;
     }
 }

@@ -22,15 +22,14 @@ class Customer extends Root{
 		
 	}
 	public Customer(String name){
-		this.name = name;
+		this.name = name;  /*张三*/
 	}
 	public void doSome(){
-		System.out.println(this.name + "do some");
-		System.out.println(super.name + "do some");
+		System.out.println(this.name + "do some"); /*张三*/
+		System.out.println(super.name + "do some");/*null*/
 		
 	}
 }
-
 
 class Vip extends Customer{
 	String name;
@@ -38,12 +37,12 @@ class Vip extends Customer{
 		
 	}
 	public Vip(String name){
-		super(name);
+		super(name); /*1 name为null */
 	}
 	public void shopping(){
-		System.out.println(this.name + "正在购物");
-		System.out.println(super.name + "正在购物");
-		System.out.println(name + "正在购物");
+		System.out.println(this.name + "正在购物"); /*null*/
+		System.out.println(super.name + "正在购物"); /*张三*/
+		System.out.println(name + "正在购物"); /*null*/
 	}
 }
 /*
