@@ -17,6 +17,14 @@ public class ArrayTest01 {
         }
         System.out.println();
         String[] s = new String[0];
-        System.out.println(s[1]);
+//        System.out.println(s[0]);
+
+        int[] arr1 = {15, 6, 7};
+        int[] desc = new int[7];
+        System.arraycopy(arr1 , 0, desc, 3, 3);
+        for (int i = 0; i < desc.length; i++)
+            System.out.print(desc[i] + " ");
+
+
     }
 }

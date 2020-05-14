@@ -4,6 +4,7 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/Array/Array.iml" filepath="$PROJECT_DIR$/Array/Array.iml" />
       <module fileurl="file://$PROJECT_DIR$/Object类/Object类.iml" filepath="$PROJECT_DIR$/Object类/Object类.iml" />
+      <module fileurl="file://$PROJECT_DIR$/String/String.iml" filepath="$PROJECT_DIR$/String/String.iml" />
       <module fileurl="file://$PROJECT_DIR$/day16Homework/day16Homework.iml" filepath="$PROJECT_DIR$/day16Homework/day16Homework.iml" />
       <module fileurl="file://$PROJECT_DIR$/final/final.iml" filepath="$PROJECT_DIR$/final/final.iml" />
       <module fileurl="file://$PROJECT_DIR$/匿名类/匿名类.iml" filepath="$PROJECT_DIR$/匿名类/匿名类.iml" />
