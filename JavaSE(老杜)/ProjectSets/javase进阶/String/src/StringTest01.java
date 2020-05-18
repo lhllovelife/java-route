@@ -28,5 +28,23 @@ public class StringTest01 {
         System.out.println(s7.lastIndexOf("abc"));
 
         System.out.println("SCcHJ".toLowerCase());
+        StringBuffer sb = new StringBuffer(15);
+        sb.append("OK");
+        System.out.println(sb);
+
+        System.out.println("--------------------------");
+        Integer u = new Integer(150);
+        int v = u.intValue();
+        System.out.println("u: " + u);
+        System.out.println("v: " + v);
+//        自动装箱 和 自动拆箱
+        Integer x = 123;
+        int y  = x;
+        System.out.println("x: " + x);
+        System.out.println("y: " + y);
+
+        Boolean m = true;
+        boolean n = m;
+
     }
 }
