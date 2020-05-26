@@ -43,14 +43,7 @@
     <property name="project.structure.side.proportion" value="0.0" />
     <property name="settings.editor.selected.configurable" value="preferences.updates" />
   </component>
-  <component name="RunManager" selected="Application.RandomTest01">
-    <configuration name="BigDecimal" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="BigDecimal" />
-      <module name="Date" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="Application.ExceptionTest01">
     <configuration name="BigDecimalTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="BigDecimalTest" />
       <module name="Date" />
@@ -58,16 +51,16 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="DateTest01" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="DateTest01" />
-      <module name="Date" />
+    <configuration name="ExceptionTest01" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ExceptionTest01" />
+      <module name="Exception" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="IntegerTest03" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="IntegerTest03" />
-      <module name="Integer" />
+    <configuration name="Exercise01" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Exercise01" />
+      <module name="leetcode" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -79,13 +72,20 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="RandomTest02" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="RandomTest02" />
+      <module name="Date" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.ExceptionTest01" />
+        <item itemvalue="Application.Exercise01" />
+        <item itemvalue="Application.RandomTest02" />
         <item itemvalue="Application.RandomTest01" />
         <item itemvalue="Application.BigDecimalTest" />
-        <item itemvalue="Application.BigDecimal" />
-        <item itemvalue="Application.DateTest01" />
-        <item itemvalue="Application.IntegerTest03" />
       </list>
     </recent_temporary>
   </component>
@@ -111,7 +111,8 @@
       <workItem from="1589367105177" duration="14758000" />
       <workItem from="1589443665691" duration="18928000" />
       <workItem from="1589537065265" duration="18115000" />
-      <workItem from="1589792409642" duration="11379000" />
+      <workItem from="1589792409642" duration="14487000" />
+      <workItem from="1590502505580" duration="3722000" />
     </task>
     <servers />
   </component>
@@ -143,22 +144,22 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="549" y="167" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1589799886663" />
-    <state width="961" height="221" key="GridCell.Tab.0.bottom" timestamp="1589816224490">
+    <state width="962" height="373" key="GridCell.Tab.0.bottom" timestamp="1590508610885">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="961" height="221" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1589816224490" />
-    <state width="961" height="221" key="GridCell.Tab.0.center" timestamp="1589816224490">
+    <state width="962" height="373" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1590508610885" />
+    <state width="962" height="373" key="GridCell.Tab.0.center" timestamp="1590508610885">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="961" height="221" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1589816224490" />
-    <state width="961" height="221" key="GridCell.Tab.0.left" timestamp="1589816224490">
+    <state width="962" height="373" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1590508610885" />
+    <state width="962" height="373" key="GridCell.Tab.0.left" timestamp="1590508610885">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="961" height="221" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1589816224490" />
-    <state width="961" height="221" key="GridCell.Tab.0.right" timestamp="1589816224490">
+    <state width="962" height="373" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1590508610885" />
+    <state width="962" height="373" key="GridCell.Tab.0.right" timestamp="1590508610885">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="961" height="221" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1589816224490" />
+    <state width="962" height="373" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1590508610885" />
     <state x="415" y="29" width="996" height="718" key="SettingsEditor" timestamp="1589379910139">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -171,10 +172,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state width="498" height="446" key="SwitcherDM/0.0.1536.824@0.0.1536.824" timestamp="1589018983367" />
-    <state x="245" y="6" key="new project wizard" timestamp="1589799910491">
+    <state x="245" y="6" key="new project wizard" timestamp="1590505114833">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="245" y="6" key="new project wizard/0.0.1536.824@0.0.1536.824" timestamp="1589799910491" />
+    <state x="245" y="6" key="new project wizard/0.0.1536.824@0.0.1536.824" timestamp="1590505114833" />
     <state x="534" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1589445290912">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
