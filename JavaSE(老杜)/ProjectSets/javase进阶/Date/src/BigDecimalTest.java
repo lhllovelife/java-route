@@ -1,4 +1,5 @@
 import java.math.BigDecimal;
+import java.text.DecimalFormat;
 
 public class BigDecimalTest {
     public static void main(String[] args) {
@@ -14,5 +15,10 @@ public class BigDecimalTest {
         System.out.println(v4);
         System.out.println(v5);
         System.out.println(v6);
+
+        DecimalFormat df = new DecimalFormat("###,###.000");
+        BigDecimal b1 = new BigDecimal(1150.56);
+        String s1 = df.format(3.14);
+        System.out.println(s1);
     }
 }
