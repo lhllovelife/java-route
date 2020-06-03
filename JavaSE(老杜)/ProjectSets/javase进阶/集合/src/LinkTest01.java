@@ -1,5 +1,4 @@
-import java.util.ArrayList;
-import java.util.List;
+import java.util.*;
 
 public class LinkTest01 {
     public static void main(String[] args) {
@@ -22,6 +21,25 @@ public class LinkTest01 {
         {
             System.out.println(s);
         }
-        
+
+        Map<Integer,String > m = new HashMap<>();
+        m.put(1, "A");
+        m.put(2, "B");
+        m.put(3, "B");
+        System.out.println("获取key为3的值：" + m.get(3));
+        Set<Map.Entry<Integer,String>> me = m.entrySet();
+        Iterator<Map.Entry<Integer,String>> it = me.iterator();
+        while (it.hasNext())
+        {
+            Map.Entry<Integer,String> node = it.next();
+            Integer key = node.getKey();
+            String value = node.getValue();
+            System.out.println(key + "-->" + value);
+        }
+
+        String s = "abc";
+        System.out.println("哈希值：" + s.hashCode());
+
+
     }
 }

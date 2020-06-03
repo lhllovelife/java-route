@@ -1,4 +1,4 @@
-public class GenericTest01 <T>{
+public class GenericTest01<T>{
     private String name;
     public static void main(String[] args) {
 
