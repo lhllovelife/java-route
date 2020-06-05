@@ -43,16 +43,9 @@
     <property name="project.structure.side.proportion" value="0.0" />
     <property name="settings.editor.selected.configurable" value="preferences.updates" />
   </component>
-  <component name="RunManager" selected="Application.LinkTest01">
-    <configuration name="CollectionTest01" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="CollectionTest01" />
-      <module name="集合" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="CollectionTest02" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="CollectionTest02" />
+  <component name="RunManager" selected="Application.ZigZagConversion">
+    <configuration name="ArrayListTest01" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ArrayListTest01" />
       <module name="集合" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -72,20 +65,27 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Test01" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Test01" />
-      <module name="Array" />
+    <configuration name="MergeTwoSortedLists" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="MergeTwoSortedLists" />
+      <module name="leetcode" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ZigZagConversion" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ZigZagConversion" />
+      <module name="leetcode" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.ZigZagConversion" />
+        <item itemvalue="Application.MergeTwoSortedLists" />
+        <item itemvalue="Application.ArrayListTest01" />
         <item itemvalue="Application.LinkTest01" />
         <item itemvalue="Application.GenericTest01" />
-        <item itemvalue="Application.CollectionTest02" />
-        <item itemvalue="Application.CollectionTest01" />
-        <item itemvalue="Application.Test01" />
       </list>
     </recent_temporary>
   </component>
@@ -120,6 +120,8 @@
       <workItem from="1590978698746" duration="4861000" />
       <workItem from="1591075207372" duration="15560000" />
       <workItem from="1591172696093" duration="4026000" />
+      <workItem from="1591236756740" duration="5136000" />
+      <workItem from="1591328370510" duration="8809000" />
     </task>
     <servers />
   </component>
@@ -155,22 +157,22 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="549" y="167" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1589799886663" />
-    <state width="946" height="240" key="GridCell.Tab.0.bottom" timestamp="1591177634348">
+    <state width="723" height="194" key="GridCell.Tab.0.bottom" timestamp="1591341253695">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="946" height="240" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1591177634348" />
-    <state width="946" height="240" key="GridCell.Tab.0.center" timestamp="1591177634348">
+    <state width="723" height="194" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1591341253695" />
+    <state width="723" height="194" key="GridCell.Tab.0.center" timestamp="1591341253695">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="946" height="240" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1591177634348" />
-    <state width="946" height="240" key="GridCell.Tab.0.left" timestamp="1591177634348">
+    <state width="723" height="194" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1591341253695" />
+    <state width="723" height="194" key="GridCell.Tab.0.left" timestamp="1591341253695">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="946" height="240" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1591177634348" />
-    <state width="946" height="240" key="GridCell.Tab.0.right" timestamp="1591177634348">
+    <state width="723" height="194" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1591341253695" />
+    <state width="723" height="194" key="GridCell.Tab.0.right" timestamp="1591341253695">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="946" height="240" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1591177634348" />
+    <state width="723" height="194" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1591341253695" />
     <state x="415" y="29" width="996" height="718" key="SettingsEditor" timestamp="1589379910139">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -191,10 +193,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="245" y="6" key="new project wizard/0.0.1536.824@0.0.1536.824" timestamp="1590918141957" />
-    <state x="534" y="146" width="672" height="678" key="search.everywhere.popup" timestamp="1591111690316">
+    <state x="534" y="146" width="672" height="678" key="search.everywhere.popup" timestamp="1591259790353">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="534" y="146" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1591111690316" />
+    <state x="534" y="146" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1591259790353" />
     <state x="471" y="322" key="vcs.readOnlyHandler.ReadOnlyStatusDialog" timestamp="1588913237838">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
