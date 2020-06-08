@@ -5,7 +5,7 @@ import java.util.Date;
 
 public class DateTest01 {
     public static void main(String[] args) throws Exception {
-        Date nowTime = new Date(); //午餐构造 初始值为当前时间
+        Date nowTime = new Date(); //无参构造 初始值为当前时间
         System.out.println(nowTime);
 
         //日期对象 -> str
