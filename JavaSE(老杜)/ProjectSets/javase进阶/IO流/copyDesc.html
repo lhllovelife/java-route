@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>哔哩哔哩下拉菜单(有过渡动画)</title>
+	<style>
+		*{
+			margin: 0px;
+			padding: 0px;
+		}
+		body{
+			font-family: Microsoft YaHei,Microsoft Sans Serif,Microsoft SanSerf,\\5FAE\8F6F\96C5\9ED1;
+		}
+		header{
+			width: 100%;
+			height: 50px;
+			background-color: #FFF;
+			box-shadow:0 0 5px 1px rgba(158,179,193,.5);
+		}
+		ul, ol, li{
+			list-style: none;
+		}
+		nav{
+			margin: 0 auto;
+			width: 83%;
+			height: 50px;
+
+			/*background-color: skyblue;*/
+			/*背景颜色用于提示*/
+		}
+		ul li{
+			width: 56px;
+			height: 50px;
+			line-height: 50px;
+			padding: 0 12px;
+			font-size: 13px;
+			color: rgb(100, 108, 122);
+			cursor: pointer;
+			box-sizing: border-box;
+			float: left;
+			/*background-color: pink;*/
+			position: relative;
+		}
+		#mainsite{
+			position: relative;
+		}
+		#mainsite:before{
+			content: "";
+			position: absolute;
+			left: -8px;
+			top: 16px;
+			display: inline-block;
+			width: 20px;
+			height: 16px;
+			background: url(images/bili.png) no-repeat;
+			background-size: 16px;
+		}
+		ol{
+			list-style: none;
+			width: 120px;
+			/*height: 176px;*/
+			background-color: #FFF;
+			border-radius: 0 0 10px 10px;
+			box-sizing: border-box;
+			box-shadow: 0 8px 20px 0 rgba(158,179,193,.3);	
+			left: 0px;
+			position: absolute;
+			overflow: hidden;/*非常重要 若不加上，height为0仍然显示*/		
+		}
+		ol li{
+			width: 120px;
+			height: 32px;
+			padding: 0 24px;
+			line-height: 32px;
+			font-size: 12px;
+			color: #666;
+			text-overflow: ellipsis;
+			white-space: nowrap;
+			overflow: hidden;
+			/*display: none;*/
+			animation: b cubic-bezier(.22,.58,.12,.98) .4s;
+		}
+		ul li ol{
+			height: 0px;
+			transition: all .9s cubic-bezier(.22,.58,.12,.98);
+		}	
+		ul li:hover{
+			color: #FFF;
+			background-color: rgb(166, 169, 171);
+		}			
+		ul li ol li:hover{
+			background-color: #F1F2F4;
+			color: #23ADe5;
+		}
+		ul li:hover #one{
+			height: 48px;
+		}
+		ul li:hover #three{
+			height: 112px;
+		}				
+		ul li:hover #four{
+			height: 144px;
+		}
+		ul li:hover #five{
+			height: 176px;
+		}
+	</style>
+</head>
+<body>
+	<header>
+		<nav>
+			<ul>
+				<li id="mainsite" style="background-color: #FFF;color: rgb(100, 108, 122);">主站</li>
+				<li>直播</li>
+				<li>全部</li>
+				<li>网游
+					<ol id="five">
+						<li>英雄联盟</li>
+						<li>逃离塔科夫</li>
+						<li>使命召唤</li>
+						<li>lol云顶之弈</li>
+						<li>绝地求生</li>
+					</ol>					
+				</li>
+				<li>手游
+					<ol id="five">
+						<li>王者荣耀</li>
+						<li>和平精英</li>
+						<li>第五人格</li>
+						<li>明日方舟</li>
+						<li>原神</li>
+					</ol>
+				</li>
+				<li>单击
+					<ol id="five">
+						<li>主机游戏</li>
+						<li>动物之森</li>
+						<li>骑马与砍杀</li>
+						<li>怪物猎人...</li>
+						<li>仁王2</li>
+					</ol>
+				</li>
+				<li>娱乐
+					<ol id="five">
+						<li>视频唱见</li>
+						<li>舞见</li>
+						<li>视频聊天</li>
+						<li>才艺</li>
+						<li>虚拟主播</li>
+					</ol>
+				</li>
+				<li>电台
+					<ol id="three">
+						<li>声音</li>
+						<li>聊天电台</li>
+						<li>唱见电台</li>
+					</ol>
+				</li>
+				<li>绘画
+					<ol id="four">
+						<li>同人绘画</li>
+						<li>原创绘图</li>
+						<li>临摹绘画</li>
+						<li>其他绘画</li>
+					</ol>					
+				</li>
+				<li>战役
+					<ol id="one">
+						<li>共抗疫情</li>
+					</ol>				
+				</li>
+			</ul>	
+		</nav>
+	</header>
+</body>
+</html>
