@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>表单验证</title>
+	<style type="text/css">
+		tr{
+			height: 40px;
+		}
+	</style>
+</head>
+<body>
+	<form action="http://localhost:5689/oa/save/" id="form">
+		<table>
+			<tr>
+				<td>用户名</td>
+				<td>
+					<input type="text" name="username" id="username">
+				</td>
+				<td id="t1">
+					
+				</td>
+			</tr>
+			<tr>
+				<td>密码</td>
+				<td>
+					<input type="password" name="pwd" id="pwdone">
+				</td>
+				<td id="t2"></td>
+			</tr>
+			<tr>
+				<td>确认密码</td>
+				<td>
+					<input type="password" id="pwdtwo">
+				</td>
+				<td id="t3"></td>
+			</tr>
+			<tr>
+				<td>邮箱</td>
+				<td>
+					<input type="text" name="email" id="email">
+				</td>
+				<td id="t4"></td>
+			</tr>
+			<tr>
+				<td colspan="2" style="text-align: center;">
+					<input type="submit" value="注册" style="width: 80px; " >
+					<input type="submit" value="登录" style="width: 80px; " >
+				</td>
+				<td id="t5"></td>
+			</tr>
+		</table>
+		<script type="text/javascript">
+			window.onload = function(){
+				//用户名
+				var userElt = document.getElementById('username');
+				userElt.onfocus = function(){
+					var t1 = document.getElementById('t1');
+					t1.innerHTML = "<span style='font-size: 12px;'>用户名不能为空，只能由数字和字母组成，且在6-14位之间</span>";
+				}
+				userElt.onblur = function(){
+					var s = userElt.value;
+					var t1 = document.getElementById('t1');
+					var reg =/^[0-9a-zA-Z]{6,14}$/;
+					if(reg.test(s)){
+						t1.innerHTML = "<span style='font-size: 14px; color: green'>" + "√" + "</span>";
+					}
+					else{
+						t1.innerHTML = "<span style='font-size: 12px; color: red;'>" + "用户名设置不符合要求" + "</span>";	
+						userElt.value = "";
+					}
+				}
+				//密码
+				var pwdElt = document.getElementById('pwdone');
+				pwdElt.onfocus = function(){
+					var t2 = document.getElementById('t2');
+					t2.innerHTML = "<span style='font-size: 12px;'>密码必须包含字母和数字，且在6-18位之间</span>";
+				}
+				pwdElt.onblur = function(){
+					var s = pwdElt.value;
+					var t2 = document.getElementById('t2');
+					var reg = /^(?![0-9]+$)(?![a-zA-Z]+$)[0-9A-Za-z]{6,16}$/;
+					if(reg.test(s)){
+						t2.innerHTML = "<span style='font-size: 14px; color: green'>"  +"√" + "</span>";
+					}
+					else{
+						t2.innerHTML = "<span style='font-size: 12px; color: red;'>" +  "密码设置不符合要求" + "</span>";	
+						pwdElt.value = "";
+					}
+				}
+				//确认密码
+				var pwd2Elt = document.getElementById('pwdtwo');
+				pwd2Elt.onfocus = function(){
+					var t3 = document.getElementById('t3');
+					t3.innerHTML = "<span style='font-size: 12px;'>请再次输入密码</span>";
+				}
+				pwd2Elt.onblur = function(){
+					var td3 = document.getElementById('t3');
+					var s1 = pwdElt.value;
+					var s2 = pwd2Elt.value;
+					if(s1 == s2 && s1!=""){
+						t3.innerHTML = "<span style='font-size: 14px; color: green'>" + "√" + "</span>";
+					}
+					else{
+						t3.innerHTML = "<span style='font-size: 12px; color: red;'>输入密码不一致</span>";
+						pwd2Elt.value = "";
+					}
+				}
+				//邮箱
+				var emailElt = document.getElementById('email');
+				email.onfocus = function(){
+					var t4 = document.getElementById('t4');
+					t4.innerHTML = "<span style='font-size: 12px;'>请输入邮箱地址</span>";
+				}
+				email.onblur = function(){
+					var t4 = document.getElementById('t4');
+					var s = emailElt.value;
+					var reg = /^[a-zA-Z0-9_-]+@[a-zA-Z0-9_-]+(\.[a-zA-Z0-9_-]+)+$/;
+					if(reg.test(s)){
+						t4.innerHTML = "<span style='font-size: 14px; color: green'>" + "√" + "</span>";
+					}
+					else{
+						t4.innerHTML = "<span style='font-size: 12px; color: red;'>邮箱地址不合法</span>";
+						pwd2Elt.value = "";
+					}
+				}
+				//提交（表单的提交2020年7月12日23:44:47前做点东西）
+				var formElt = document.getElementById('form');
+				formElt.onsubmit = function(){
+					var userElt = document.getElementById('username');
+					var pwdElt = document.getElementById('pwdone');
+					var pwd2Elt = document.getElementById('pwdtwo');
+					var emailElt = document.getElementById('email');
+					var s1 = userElt.value;
+					var s2 = pwdElt.value;
+					var s3 = pwd2Elt.value;
+					var s4 = emailElt.value;
+					alert(s1 + " " + s2 + " " + s3 + " " + s4);					
+					var t1 = document.getElementById('t1');
+					var t2 = document.getElementById('t2');
+					var t3 = document.getElementById('t3');
+					var t4 = document.getElementById('t4');
+					var s5 = t1.innerText;
+					var s6 = t2.innerText;
+					var s7 = t3.innerText;
+					var s8 = t4.innerText;
+					alert(s5 + " " + s6 + " " + s7 + " " + s8);
+					if(s5 == "√" && s6 == "√" && s7 == "√" && s8 =="√"){
+						alert("进行提交表单");
+						return true;
+					}
+					else{
+						alert("您输入的信息格式有误")
+						return false;
+					}					
+				}
+			}
+		</script>
+	</form>
+</body>
+</html>

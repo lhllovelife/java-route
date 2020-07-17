@@ -1,0 +1,1 @@
+window.alert("这是外部链接的js代码");

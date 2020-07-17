@@ -1,0 +1,21 @@
+<!DOCTYPE >
+<html>
+	<head>
+		<title>html嵌入js的第一种方式</title>
+	</head>
+	<body>
+		<form action="http://192.168.0.1:8120/oa/save?" method="post">
+			<input type="text" name="username" >
+			<input type="submit" value="提交">
+		</form>
+		<script type="text/javascript" src="js/001.js"></script>
+		<input type="button" value="欢迎js" onclick="window.alert('123')" />
+		<input type="button" value="你好" id="btn2">
+		<script type="text/javascript">
+			document.getElementById('btn2').onclick = function() {
+				window.alert("hello");
+			}
+			
+		</script>
+	</body>
+</html>

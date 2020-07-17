@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>js中定义类</title>
+	</head>
+	<body>
+		<form action="http://localhost:33809/oa/save?">
+			男 <input type="radio" name="gender" value="f" id="sex1">
+			女 <input type="radio" name="gender" value="m" id="sex0"> 
+			<input type="submit" value="提交">
+		</form>
+
+		<script type="text/javascript">
+		/*
+			function Student(no, name, age){
+				this.no = no;
+				this.name = name;
+				this.age = age;
+				this.getDetail = function(){
+					return "学号: " + this.no + " 姓名: " + this.name + " 年龄: " + this.age;
+				}
+
+			}*/
+			Student = function(no, name, age){
+				this.no = no;
+				this.name = name;
+				this.age = age;
+				this.getDetail = function(){
+					return this.no + " " + this.name + " "+ this.age;
+				}
+			}
+			var st1 = new Student(110, "张三", "15");
+			alert(st1['no']);
+			alert(st1['name']);
+			alert(st1['age']);
+			alert(st1.getDetail());
+			//为Student类扩展一个属性
+			Student.prototype.gender;
+			var st2 = new Student(120, "李四", 18);
+			//对扩展属性赋值(不能直接new出带扩展属性的对象，因为构造函数是固定的)
+			st2.gender = "男";
+			alert(st2.gender);
+			//扩展方法
+			Student.prototype.getGender = function(){
+				return "性别: " + this.gender;
+			}
+			alert(st2.getGender());
+			document.getElementById('sex1').onclick = function(){
+				alert("您选择的是: 男")
+			}
+			document.getElementById('sex0').onclick = function(){
+				alert("您选择的是: 女")
+			}
+		</script>
+
+	</body>
+</html>
